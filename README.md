@@ -9,7 +9,41 @@ converts them into a timelapse video.
 [▶ Watch the timelapse](demo/timelapse.mp4)
 
 ## How it works
-ESP32 → JPEG frames → SD card → FFmpeg → MP4
+### Image Capture Workflow
+
+ESP32-CAM Power On
+
+⬇
+
+Camera Initialization
+
+⬇
+
+SD Card Initialization
+
+⬇
+
+Image Capture
+
+⬇
+
+Filename Generation
+
+⬇
+
+JPEG Image Storage
+
+⬇
+
+Frame Buffer Release
+
+⬇
+
+100 ms Delay
+
+⬇
+
+Repeat Capture Cycle
 
 ## Documentation
 Step-by-step setup and usage guide:
